@@ -1,0 +1,118 @@
+<!-- MY HEAD TEMPLATE  -->
+<!DOCTYPE html>
+<html lang = "en-US">
+
+  <head>
+    <meta charset = "UTF-8">
+    <title>MS Digital Survey Form</title>
+    <link rel = "stylesheet" type = "text/css" href = "main.css" />
+    <!-- https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css -->
+  </head>
+
+    <body>
+
+        <section class="mslogodesc">
+            <div>
+            <img src="https://i.imgur.com/Ojuthkd.png" class="mslogo">
+            </div>
+        </section>  
+
+        <div class="container">  
+            
+            <header class="header">
+                <h1 id="title" class="text-center">Client Survey Form</h1>
+                <p id="description" class="description text-center"><i>
+                We continuously aim to provide our customers the best product and services.<br> We thank you for taking the time to improve our platform.</i>
+                </p>
+            </header>
+
+            <form id="survey-form">
+
+                <!-- Name -->
+                <div class="form-control">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name here" required />
+                </div>
+                <!-- Email -->
+                <div class="form-control">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                </div>
+                <!-- Number -->
+                <div class="form-control">
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" id="number" placeholder="How old are you" required min="1" max="99"/>
+                </div>
+                <!-- Position -->
+                <div class="form-control">
+                    <label for="dropdown" id="dropdown">What is your current role/position?</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="">Select your current role</option>
+                        <option value="student">Student</option>
+                        <option value="freelancer">Freelancer</option>
+                        <option value="full-time-job">Full-time job</option>
+                        <option value="part-time-job">Part-time job</option>
+                        <option value="business-owner">Business Owner</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <!-- Recommendation -->
+                <div class="form-control">
+                    <label>Will you recommend MS Digital to a friend, family or anyone?</label>
+
+                    <label for="recommendation-1"><input type="radio" id="recommendation-1" name="recommendation" value="for-sure"/>For sure</label>
+                    <label for="recommendation-2"><input type="radio" id="recommendation-2" name="recommendation" value="possibly"/>Possibly</label>   
+                    <label for="recommendation-2"><input type="radio" id="recommendation-2" name="recommendation" value="doubt-it"/>I doubt it</label>                 
+                </div>
+                <!-- Features -->
+                <div class="form-control">
+                    <label for="features" id="label-features">What is the best product, courses or features you like with MS Digital?</label>
+                    <select name="features" id="features">
+                        <option value="">Select an option</option>
+                        <option value="wp-starter">WordPress Starter</option>
+                        <option value="graphic-web-services">Graphic Design/Web Design Services</option>
+                        <option value="wp-jumpstart">Use WordPress to Jumpstart Web Dev Career Ebook</option>
+                        <option value="project-resources">MS Projects and Resources</option>
+                        <option value="ms-code-typing-game">MS Code-Typing Game</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <!-- Improve -->
+                <div class="form-control">
+                    <label>What do you want to see improved in our future updates?<small>(Chek all that apply)</small></label>
+
+                    <label for="improve-1"><input type="checkbox" name="improve" id="improve-1" value="improve-1"/>Projects</label>
+                    <label for="improve-2"><input type="checkbox" name="improve" id="improve-2" value="improve-2"/>Back-end Projects</label>
+                    <label fr="improve-3"><input type="checkbox" name="improve" id="improve-3" value="improve-3"/>Data Visualization</label>
+                    <label for="improve-4"><input type="checkbox" name="improve" id="improve-4" value="improve-4"/>Challenges</label>
+                    <label for="improve-5"><input type="checkbox" name="improve" id="improve-5" value="improve-5"/>Open Source Community</label>
+                    <label for="improve-6"><input type="checkbox" name="improve" id="improve-6" value="improve-6"/>Gitter help rooms</label>
+                    <label for="improve-7"><input type="checkbox" name="improve" id="improve-7" value="improve-7"/>Videos</label>
+                    <label for="improve-8"><input type="checkbox" name="improve" id="improve-8" value="improve-8"/>City Meetups</label>
+                    <label for="improve-9"><input type="checkbox" name="improve" id="improve-9" value="improve-9"/>Wiki</label>
+                    <label for="improve-10"><input type="checkbox" name="improve" id="improve-10" value="improve-10"/>Forum</label>
+                    <label for="improve-11"><input type="checkbox" name="improve" id="improve-11" value="improve-11"/>Additional Courses</label>
+                </div>  
+                <!-- Message -->
+                <div class="form-control">
+                    <label for="message">Do you want to send us a message, comments orsuggestions?</label>
+                    <textarea name="message"id="message" placeholder="EnterMessage here"></textarea>
+                </div>
+                <!-- Button -->
+                <button type="submit"id="submit">
+                Submit</button>
+
+
+            </form>
+        
+        </div>
+
+    </body>
+
+
+    <!-- Codepen Fork -->
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
